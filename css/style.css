@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Mulish:wght@300;700&family=Noto+Sans+Display&family=Nunito:wght@400;500;700;800;900&family=Poppins:wght@400;500;600;700&family=Red+Hat+Display:wght@400;500;700&family=Roboto:wght@500;700;900&family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Mulish:wght@300;700&family=Noto+Sans+Display&family=Nunito:wght@400;500;700;800;900&family=Poppins:wght@400;500;600;700&family=Red+Hat+Display:wght@400;500;700&family=Roboto:wght@500;700;900&family=Rubik:wght@300&display=swap');
+@font-face {
+    font-family: 'TT Norms Pro';
+    src: local('TT Norms Pro Bold'), local('TT-Norms-Pro-Bold'),
+        url('../fonts/TTNormsPro-Bold.ttf') format('woff2'),
+        url('TTNormsPro-Bold.woff') format('woff'),
+        url('TTNormsPro-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'TT Norms Pro';
+    src: local('TT Norms Pro Regular'), local('TT-Norms-Pro-Regular'),
+        url('TTNormsPro-Regular.woff2') format('woff2'),
+        url('TTNormsPro-Regular.woff') format('woff'),
+        url('TTNormsPro-Regular.ttf') format('truetype');
+        font-weight: 400;
+        font-style: normal;
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:  "TT Norms Pro","Arial",sans-serif;
+    font-family: 'Big Shoulders Display',cursive;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.header {
+    padding: 17px 0px;
+    background-color: #453c91;
+    width: 100%;
+    position: fixed;
+}
+
+.container {
+    width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+.nav-link:hover {
+    color: #c1c1cd;
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.header-btn {
+    background-color: #4eb543;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-size: 15px;
+}
+.header-btn:hover {
+    transition: all 0.4s ease;
+    background-color: #4eb543;
+    border-color: #4eb543;
+    box-shadow: 5px 5px rgb(78 181 67 / 50%);
+}
+
+.lists {
+    background-image: url(../images/background-img.svg);
+    background-repeat: no-repeat;
+    margin-bottom: 200px;
+}
+
+.lists-title {
+    text-align: center;
+    padding-top: 120px;
+    margin-bottom: 55px;
+    font-size: 35px;
+    line-height: 42px;
+    font-weight: 700;
+}
+
+.lists-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+
+.item {
+    background-color: #2e2c9c;
+    margin-bottom: 14px;
+    width: 847px;
+    height: 143px;
+}
+
+.item-title {
+    color: #fff;
+    padding-left: 160px;
+    line-height: 24px;
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 6px;
+}
+
+.item-text {
+    padding-left: 160px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.item::before {
+    content: " ";
+    background-image: url('../images/task.svg');
+    background-repeat: no-repeat;
+    width: 90px;
+    height: 90px;
+    float: left;
+    margin-left: 40px;
+    margin-top: 25px;
+}
+
+.item-second::before {
+    content: "";
+    background-image: url('../images/consult.svg');
+}
+
+.item-third::before {
+    content: "";
+    background-image: url('../images/motivate.svg');
+}
+
+.car-part {
+    background-color: #e28625;
+    border-radius: 8px;
+    width: 920px;
+    height:500px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+}
+
+.car-lists {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.car-item {
+    padding: 48px;
+    width: 307px;
+    height: 500px;
+}
+
+.car-title {
+    font-family: 'Big Shoulders Display',cursive;
+}
+
+.car-img {
+    margin-bottom: 35px;
+}
+
+.car-title {
+    color: #f2f2f2;
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.car-text {
+    color: #fff;
+    opacity: 0.75;
+    font-size: 15px;
+    line-height: 25px;
+    font-family: 'Lexend Deca', sans-serif;
+    margin-bottom: 94px;
+}
+
+.car-link {
+    background: #f2f2f2;
+    border-radius: 25px;
+    font-size: 15px;
+    line-height: 25px;
+    text-decoration: none;
+    color: #e28625;
+    padding: 12px 31.5px;
+}
+
+.car-link:hover {
+    outline: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+.car-second {
+    background: #006971;
+    border-radius: 8px;
+}
+
+.car-third {
+    background: #004140;
+    border-radius: 0px 8px 8px 0px;
+}
+
+.link-second {
+    color: #006971;
+}
+
+.link-third {
+    color: #004140;
+}
